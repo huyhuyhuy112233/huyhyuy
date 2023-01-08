@@ -564,3 +564,306 @@ a span {
     color:darkgray;
     font-weight: 100;
 }
+
+
+
+/* plan */
+.plan {
+    padding-top: 100px;
+    background-image: url(./Samar/bg16.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.plan-title p{
+    text-align: center;
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #f55f8d;
+}
+.plan-title h1{
+    text-align: center;
+    font-size: 70px;
+    line-height: 1.1;
+    font-weight: 800;
+    color: #262626;
+    margin-bottom: 20px;
+}
+.plan-content {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 40px;
+    gap: 30px;
+}
+.plan-content ul{
+    border-top: solid;
+    color: dimgrey;
+    font-weight: 100;
+}
+.plan-content ul li{
+    list-style: none;
+    color: #262626;
+}
+.plan-item {
+    padding: 35px 60px;
+    border: 3px solid transparent;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 1px 0 50px rgb(0 0 0 / 10%);
+    border-image: 100 round;
+    transition: all .5s;
+}
+.plan-item:hover{
+    border-image: url(./Samar/br.png) 1 round;
+}
+.plan-item span {
+    color: #f8ae56;
+    font-size: 50px;
+    font-weight: 800;
+}
+.plan-item p{
+   text-align: center;
+}
+.plan-item h3{
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+}
+.plan-item i{
+    font-size: 12px;
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    background-color: #feeff3;
+    color: #f55f8d;
+    border-radius: 100%;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+.plan-item button{
+    margin: 40px;
+    height: 60px;
+    width: 170px;
+    font-size: 15px;
+    font-weight: 500;
+    background-image: linear-gradient(to right,#f55f8d 0,#f8ae56 51%,#f55f8d 100%);
+    background-size: 200%;
+    border: 1px solid transparent;
+    transition: all 0.5s;
+    border-radius: 30px;
+    color: #fff;
+    line-height: 1.2;
+}
+
+
+/* testimonial */
+
+.testimonial-title p{
+    text-align: center;
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #f55f8d;
+}
+.testimonial-title h3{
+    text-align: center;
+    font-weight: bold;
+    font-size: 65px;
+}
+.testimonial-content {
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 100px 0;
+  }
+  
+  .testimonial-thumbs .testimonial-pic img {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    padding: 4px;
+    position: relative;
+    z-index: 2;
+    background-color: pink;
+  }
+  
+  .testimonial-thumbs {
+    width: 300px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    height: 170px;
+    position: relative;
+  }
+  .testimonial-comment {
+    min-height: 300px;
+    width: 100%;
+  }
+  .testimonial-comment .swiper-wrapper {
+    padding-bottom: 20px;
+  }
+  .testimonial-thumbs .testimonial-pic {
+    padding: 30px 0 0;
+    transition: all 0.5s;
+  }
+  .testimonial-thumbs .swiper-slide-thumb-active .testimonial-pic {
+    padding: 0 0 40px;
+  }
+  .swiper-pagination-bullet-active{
+    opacity: 1;
+    background-color: #f55f8d !important;
+  }
+  .testimonial-text {
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 20px 50px 0 rgb(0 0 0 / 10%);
+    margin: 20px 100px;
+    border-radius: 10px;
+    background-color: #fff;
+    max-width: 770px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+  .testimonial-text i {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    font-size: 70px;
+    color: #f55f8d;
+    transform: rotate(-180deg);
+}
+.testimonial-pic .shape-bx {
+    position: relative;
+    height: 35px;
+    width: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 18px;
+    opacity: 0;
+    transition: all 1s;
+    background-color: #f55f8d;
+  }
+  .testimonial-pic::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    bottom: 30px;
+    background-color: #f55f8d;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .testimonial-pic::after{
+    content: "";
+    height: 10px;
+    width: 10px;
+    bottom: 0;
+    background-color:#f55f8d;
+    border-radius: 50%;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+  }
+  .testimonial-name{
+    font-size: 20px;
+    font-weight: 800;
+    color: #262626;
+    line-height: 26px;
+    margin-bottom: 5px;
+  }
+  .testimonial__text p{
+    font-size: 18px;
+    font-weight: 400;
+    padding: 0px 15px 15px;
+  }
+  .testimonial-position{
+    color: #f55f8d;
+    margin-bottom: 20px;
+  }
+  
+  
+  /* BLOG */
+.blog {
+    background-image: url(./Samar/bg16.png);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+  
+  .blog .title-blog p {
+    color: #f55f8d;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .blog .title-blog h2 {
+    font-size: 70px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  
+  .blog-item .b-header img {
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .blog .b-header p {
+    background-image: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%);
+    background-size: 200%;
+    position: absolute;
+    bottom: 260px;
+    left: 15px;
+    border-radius: 10px;
+    padding: 13px 20px;
+    font-size: 14px;
+    color: #fff;
+  }
+  
+  
+  .blog .b-body {
+    padding: 0px 15px 20px 15px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .blog .b-body h2 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #262626;
+  }
+  
+  .blog .b-body p {
+    padding-right: 30px;
+    color: #848484;
+    margin-bottom: 20px;
+  }
+  
+  .blog .b-footer {
+    display: flex;
+    margin-left: -40px;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 15px;
+  }
+  
+  .blog .b-footer p {
+    margin-left: 40px;
+    color: #848484;
+  }
+  
+  .blog .b-footer i,
+  .blog .b-footer span {
+    color: #f55f8d;
+    font-size: 18px;
+  }
+  
+  
+  .owl-carousel .blog-item {
+    text-align: left;
+    border-radius: 10px;
+    background: rgba(245, 95, 141, .1);
+  }
