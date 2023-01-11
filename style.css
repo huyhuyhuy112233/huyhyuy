@@ -1194,7 +1194,7 @@ body{
 }
 
 .carousel__content {
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .carousel__left {
@@ -1228,27 +1228,27 @@ body{
     margin-bottom: 20px;
 }
 .aboutus__content {
-    flex-direction: column;
+    flex-direction: row;
+   justify-content: space-between;
 }
 .aboutus__left {
-    width: 90%;
-    opacity: 0;
+    width: 70%;
 }
 
-.aboutus__left img {
+/* .aboutus__left img {
     position: relative;
     right: 0;
     transform: translateY(0);
     width: 100%;
     border-radius: 100px;
-}
+} */
 
 .aboutus__right {
-    width: 100%;
-    gap: 40px;
-    padding: 40px 0 0;
+    width: 40%;
+} 
+.aboutus__right h1{
+    font-size: 0.1rem;
 }
-
 .aboutus__right .button {
     width: 100%;
     font-size: 24px;
@@ -1265,6 +1265,9 @@ body{
 .statics__item{
     width: 50%;
     margin-bottom: 40px;
+}
+.feature__bg {
+    width: 100%;
 }
 .portfolio__content {
     grid-template-columns: 1fr 1fr;
@@ -1300,9 +1303,25 @@ body{
     font-size: 24px;
     padding: 24px 35px;
 }
+.blog .b-header p{
+    padding: 13px 20px;
+    bottom: 90px;
+    left: 15px;
+}
 .footer-top{
     display: flex;
     justify-content: space-between;
+    font-size: 0.1rem;
+}
+.footer-text{
+    width: 50%;
+}
+.footer-form input{
+    width: 50%;
+    font-size: 16px;
+} 
+.footer-form button{
+    font-size: 16px;
 }
 .footer-bottom {
     flex-wrap: wrap;
