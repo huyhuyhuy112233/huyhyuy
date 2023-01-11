@@ -1174,3 +1174,240 @@ body{
     transition: all .2s;
     box-shadow: -4px 4px 24px -10px #f55f8d;
 }   
+
+/* responsive */
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 540px;
+    }
+
+.header-menu {
+    display: flex;
+}
+
+.header nav a{
+    display: block;
+    padding: 10px 0;
+}
+.carousel {
+    padding-top: 180px;
+}
+
+.carousel__content {
+    flex-direction: column;
+}
+
+.carousel__left {
+    width: 100%;
+    padding-bottom: 10px;
+    padding-left: 0;
+}
+
+.carousel__right {
+    width: 100%;
+    margin-left: 0;
+}
+
+.carousel__right img {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.carousel .button {
+    width: 100%;
+    font-size: 4px;
+    padding: 10px 20px;
+}
+.best__item .slick__item{
+    display: flex;
+    flex-direction: column;
+}
+.item{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.aboutus__content {
+    flex-direction: column;
+}
+.aboutus__left {
+    width: 90%;
+    opacity: 0;
+}
+
+.aboutus__left img {
+    position: relative;
+    right: 0;
+    transform: translateY(0);
+    width: 100%;
+    border-radius: 100px;
+}
+
+.aboutus__right {
+    width: 100%;
+    gap: 40px;
+    padding: 40px 0 0;
+}
+
+.aboutus__right .button {
+    width: 100%;
+    font-size: 24px;
+    padding: 24px 35px;
+}
+.statics {
+    padding-bottom: 0;
+}
+
+.statics .active {
+    flex-wrap: wrap;
+}
+
+.statics__item{
+    width: 50%;
+    margin-bottom: 40px;
+}
+.portfolio__content {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.portfolio__content .portfolio__item {
+    grid-column: 1 / span 2;
+}
+
+.portfolio__item:nth-child(3) {
+    grid-column: 1 / span 1;
+}
+
+.portfolio__item:nth-child(4) {
+    grid-column: 2 / span 1;
+}
+.plan-content{
+    display: flex;
+    flex-direction: column;
+}
+.plan-item{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 46px 60px;
+}
+.plan-item ul {
+    padding-left: 26%;
+}
+
+.plan-item .button {
+    width: 100%;
+    font-size: 24px;
+    padding: 24px 35px;
+}
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-bottom {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    padding: 60px 0 calc(60px - 24px);
+}
+
+.footer-item {
+    flex-basis: 40%;
+    margin-bottom: 24px;
+}
+}
+@media only screen and (max-width: 576px) {
+    .container {
+        width: auto;
+    }
+    .header__logo img {
+        width: 85%;
+    }
+    .header nav a{
+        display: block;
+        padding: 10px 0;
+    }
+    .carousel {
+        padding-top: 180px;
+    }
+    
+    .carousel__content {
+        flex-direction: column;
+    }
+    
+    .carousel__left {
+        width: 100%;
+        padding-bottom: 10px;
+        padding-left: 0;
+    }
+    
+    .carousel__right {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .carousel__right img {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    
+    .carousel .button {
+        width: 100%;
+        font-size: 4px;
+        padding: 10px 20px;
+    }
+    .best__item .slick__item{
+        display: flex;
+        flex-direction: column;
+    }
+    .item{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .aboutus__content {
+        flex-direction: column;
+    }
+    .aboutus__left {
+        width: 100%;
+    }
+    
+    .aboutus__left img {
+        position: relative;
+        right: 0;
+        transform: translateY(0);
+        width: 100%;
+        border-radius: 100px;
+    }
+    
+    .aboutus__right {
+        width: 100%;
+        padding: 40px 0 0;
+    }
+    
+    .aboutus__right .button {
+        width: 100%;
+        font-size: 24px;
+        padding: 24px 35px;
+    }
+    .statics {
+        padding-bottom: 0;
+    }
+    
+    .statics .active {
+        flex-wrap: wrap;
+    }
+    
+    .statics__item{
+        width: 50%;
+        margin-bottom: 40px;
+    }
+    .feature__right img {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .feature__bg i {
+        display:none;
+    }
+}
